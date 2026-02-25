@@ -17,9 +17,9 @@ print(f"\nO valor total do inventário é de: R${calculo}")
 reajuste = 0.15
 vendas_reajuste = []
 
-for i in vendas_brutas:
-    novo_preco = i[3] * (1 + reajuste)
-    nova_tupla = (i[1], novo_preco)
+for n in vendas_brutas:
+    novo_preco = n[3] * (1 + reajuste)
+    nova_tupla = (n[1], novo_preco)
     vendas_reajuste.append(nova_tupla)
 
 print(f"\nVendas com reajuste implementado: ")
